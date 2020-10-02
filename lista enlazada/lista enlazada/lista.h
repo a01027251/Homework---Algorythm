@@ -193,6 +193,16 @@ public:
     };
     
     void SortedInsert (Node<T> *newNode){
+        int pVal = newNode->get_val();
+        Node<T> *ptr = head;
+
+        while (ptr->get_next()->get_val() < pVal)
+        {
+            ptr = ptr->get_next();
+        }
+        newNode->set_next(ptr->get_next());
+        ptr->set_next(newNode);
+        
 
     };
     

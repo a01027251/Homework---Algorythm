@@ -41,14 +41,16 @@ int main()
         
         list.DeleteList();
         
-        list.push(4);
+        list.push(15);
+        list.push(15);
+        list.push(13);
+        list.push(12);
+        list.push(11);
         list.push(9);
-        list.push(10);
-        list.push(10);
-        list.push(15);
-        list.push(15);
-        list.push(15);
+        list.push(8);
         list.RemoveDuplicates();
+        list.SortedInsert(new Node<int>(14,NULL));
+        list.print();
         
 
 
