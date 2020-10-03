@@ -179,7 +179,7 @@ public:
         return count;
     };
     
-    void DeleteList(){
+    void DeleteList(){ //Complejidad O(N)
         Node<T>* current = head;
         Node<T>* next2;
         
@@ -192,7 +192,7 @@ public:
         head=NULL;
     };
     
-    void SortedInsert (Node<T> *newNode){
+    void SortedInsert (Node<T> *newNode){ //Complejidad O(n)
         int pVal = newNode->get_val();
         Node<T> *ptr = head;
 
@@ -206,7 +206,7 @@ public:
 
     };
     
-    void RemoveDuplicates(){
+    void RemoveDuplicates(){//complejidad O(n^2)
         Node<T>* current = head;
         Node<T>* next2;
         if (current == NULL)
@@ -228,7 +228,7 @@ public:
         
     };
     
-    void Reverse(){
+    void Reverse(){ // Complejidad O(n)
         Node<T>* next = NULL;
         Node<T>* prev = NULL;
         Node<T>* current = head;
