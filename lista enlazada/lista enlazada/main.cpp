@@ -17,7 +17,7 @@ int main()
     {
         LinkedList<int> list;
         list.push(4);
-        list.push(42);
+        list.push(92);
         list.push(92);
         list.push(56);
         list.push(48);
