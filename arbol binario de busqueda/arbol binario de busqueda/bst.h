@@ -190,15 +190,12 @@ public:
             if( node != NULL )
             {
                 cout << orden;
-
                 cout << (izq ? "├── " : "└──" );
-
-
                 cout << node->get_val() << endl;
 
 
-                print_2D( orden + (izq ? "│   " : "    "), node->get_left(), true);
-                print_2D( orden + (izq ? "│   " : "    "), node->get_right(), false);
+                print_2D( orden + (izq ? "│      " : "       "), node->get_left(), true);
+                print_2D( orden + (izq ? "│      " : "       "), node->get_right(), false);
             }
         }
 
