@@ -193,10 +193,10 @@ public:
 
                 cout << (izq ? "├── " : "└──" );
 
-                // print the value of the node
+
                 cout << node->get_val() << endl;
 
-                // enter the next tree level - left and right branch
+
                 print_2D( orden + (izq ? "│   " : "    "), node->get_left(), true);
                 print_2D( orden + (izq ? "│   " : "    "), node->get_right(), false);
             }
